@@ -1,0 +1,52 @@
+{
+  "home": {
+    "title": "Le temps d'une vie",
+    "description": "Saurez-vous deviner l'espérance de vie de sept animaux de ferme ?",
+    "startQuiz": "Commencer",
+    "seeAnswers": "Voir les réponses"
+  },
+  "quiz": {
+    "question": "Quelle est l'espérance de vie naturelle de cet animal ?",
+    "validate": "Valider",
+    "next": "Suivant",
+    "seeResults": "Voir les résultats",
+    "yourAnswer": "Votre réponse :",
+    "reality": "En élevage :",
+    "naturalLifespan": "Espérance de vie :",
+    "lifePercentage": "de sa vie",
+    "previousAnswers": "Réponses précédentes"
+  },
+  "result": {
+    "title": "Merci !",
+    "message": "Ces animaux méritent de vivre leur vie pleinement.",
+    "restart": "Recommencer",
+    "seeAllAnswers": "Voir toutes les réponses"
+  },
+  "answers": {
+    "title": "Toutes les réponses",
+    "source": "Source :"
+  },
+  "animals": {
+    "pig": "Cochon",
+    "dairyCalf": "Veau laitier",
+    "beefCow": "Vache laitière",
+    "maleChick": "Poussin mâle",
+    "lamb": "Agneau",
+    "eggHen": "Poule pondeuse",
+    "turkey": "Dinde"
+  },
+  "time": {
+    "day": "1 jour",
+    "months": "{count} mois",
+    "year": "{count} an",
+    "years": "{count} ans",
+    "yearsAndMonths": "{years} an et {months} mois",
+    "yearsAndMonthsPlural": "{years} ans et {months} mois"
+  },
+  "header": {
+    "home": "Accueil"
+  },
+  "footer": {
+    "createdBy": "Créé par"
+  }
+}

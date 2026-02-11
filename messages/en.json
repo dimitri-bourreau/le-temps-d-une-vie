@@ -1,0 +1,52 @@
+{
+  "home": {
+    "title": "A Lifetime",
+    "description": "Can you guess the lifespan of seven farm animals?",
+    "startQuiz": "Start",
+    "seeAnswers": "See the answers"
+  },
+  "quiz": {
+    "question": "What is the natural lifespan of this animal?",
+    "validate": "Validate",
+    "next": "Next",
+    "seeResults": "See results",
+    "yourAnswer": "Your answer:",
+    "reality": "In farming:",
+    "naturalLifespan": "Lifespan:",
+    "lifePercentage": "of their life",
+    "previousAnswers": "Previous answers"
+  },
+  "result": {
+    "title": "Thank you!",
+    "message": "These animals deserve to live their lives fully.",
+    "restart": "Start over",
+    "seeAllAnswers": "See all answers"
+  },
+  "answers": {
+    "title": "All answers",
+    "source": "Source:"
+  },
+  "animals": {
+    "pig": "Pig",
+    "dairyCalf": "Dairy calf",
+    "beefCow": "Dairy cow",
+    "maleChick": "Male chick",
+    "lamb": "Lamb",
+    "eggHen": "Laying hen",
+    "turkey": "Turkey"
+  },
+  "time": {
+    "day": "1 day",
+    "months": "{count} months",
+    "year": "{count} year",
+    "years": "{count} years",
+    "yearsAndMonths": "{years} year and {months} months",
+    "yearsAndMonthsPlural": "{years} years and {months} months"
+  },
+  "header": {
+    "home": "Home"
+  },
+  "footer": {
+    "createdBy": "Created by"
+  }
+}

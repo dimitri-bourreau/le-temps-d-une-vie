@@ -29,6 +29,7 @@ export const SiteHeader = () => {
       ) : (
         <div />
       )}
+      <div className="flex-1" />
       <LanguageSwitcher />
     </header>
   );

@@ -5,7 +5,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import { PageTransition } from '@/components/atoms/page-transition';
 import { SiteHeader } from '@/components/molecules/site-header';
-import { SiteFooter } from '@/components/molecules/site-footer';
 import './globals.css';
 
 const lora = Lora({
@@ -81,7 +80,6 @@ const RootLayout = async ({
           <NuqsAdapter>
             <SiteHeader />
             <PageTransition>{children}</PageTransition>
-            <SiteFooter />
           </NuqsAdapter>
         </NextIntlClientProvider>
       </body>

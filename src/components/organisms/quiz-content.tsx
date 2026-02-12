@@ -30,7 +30,11 @@ export const QuizContent = () => {
 
   return (
     <div className="relative min-h-screen bg-background">
-      <QuizSidebar answers={answers} />
+      <QuizSidebar
+        animals={animals}
+        answers={answers}
+        currentStep={currentStep}
+      />
       <div className="flex min-h-screen flex-col items-center justify-center px-6 pt-20 pb-16">
         <QuizQuestion
           animal={currentAnimal}

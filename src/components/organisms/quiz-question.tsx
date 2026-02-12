@@ -113,6 +113,7 @@ const QuizQuestionInner = ({
       ) : (
         <>
           <AnimatedHeart
+            key={`${animal.id}-revealed`}
             naturalLifespanYears={animal.naturalLifespanYears}
             slaughterAgeMonths={animal.slaughterAgeMonths}
             userGuessMonths={guessMonths}

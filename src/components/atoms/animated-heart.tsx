@@ -27,19 +27,8 @@ export const AnimatedHeart = ({
 
   const [currentPercentage, setCurrentPercentage] = useState(100);
   const animationRef = useRef<number | null>(null);
-  const wasRevealedRef = useRef(false);
 
   useEffect(() => {
-    if (!isRevealed) {
-      wasRevealedRef.current = false;
-      return;
-    }
-
-    if (wasRevealedRef.current) {
-      return;
-    }
-
-    wasRevealedRef.current = true;
     const animationDuration = 4000;
     const startTime = Date.now();
 
@@ -66,7 +55,7 @@ export const AnimatedHeart = ({
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [isRevealed, slaughterPercentage]);
+  }, [slaughterPercentage]);
 
   const strokeDashoffset =
     heartPathLength - (currentPercentage / 100) * heartPathLength;

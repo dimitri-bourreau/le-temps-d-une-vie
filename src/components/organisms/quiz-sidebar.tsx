@@ -130,7 +130,7 @@ export const QuizSidebar = ({
           href="/answers"
           className="!cursor-pointer font-(family-name:--font-inter) text-sm text-muted-foreground transition-colors hover:text-foreground"
         >
-          {t('seeResults')} →
+          {t('seeAllAnswers')} →
         </Link>
       </div>
     </aside>

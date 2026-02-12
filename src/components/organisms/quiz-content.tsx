@@ -29,9 +29,9 @@ export const QuizContent = () => {
   }
 
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="relative min-h-screen bg-background">
       <QuizSidebar answers={answers} />
-      <div className="flex flex-1 flex-col items-center justify-center px-6 pt-20 pb-16">
+      <div className="flex min-h-screen flex-col items-center justify-center px-6 pt-20 pb-16">
         <QuizQuestion
           animal={currentAnimal}
           currentStep={currentStep}

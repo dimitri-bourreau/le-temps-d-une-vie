@@ -12,12 +12,19 @@ interface AnswerCardProps {
 
 const ANIMAL_KEYS: Record<string, string> = {
   pig: 'pig',
+  'breeding-sow': 'breedingSow',
   'dairy-calf': 'dairyCalf',
   'beef-cow': 'beefCow',
   'male-chick': 'maleChick',
+  'broiler-chicken': 'broilerChicken',
   lamb: 'lamb',
+  rabbit: 'rabbit',
   'egg-hen': 'eggHen',
   turkey: 'turkey',
+  'dairy-goat': 'dairyGoat',
+  'quail-eggs': 'quailEggs',
+  'quail-meat': 'quailMeat',
+  trout: 'trout',
 };
 
 export const AnswerCard = ({
@@ -84,7 +91,7 @@ export const AnswerCard = ({
           src={animal.imagePath}
           alt={animalName}
           fill
-          className="mix-blend-multiply object-cover"
+          className="mix-blend-multiply object-contain"
         />
       </div>
       <div className="flex flex-col gap-2 p-4">

@@ -28,12 +28,19 @@
   },
   "animals": {
     "pig": "Cochon",
+    "breedingSow": "Truie reproductrice",
     "dairyCalf": "Veau laitier",
     "beefCow": "Vache laitière",
     "maleChick": "Poussin mâle",
+    "broilerChicken": "Poulet de chair",
     "lamb": "Agneau",
+    "rabbit": "Lapin",
     "eggHen": "Poule pondeuse",
-    "turkey": "Dinde"
+    "turkey": "Dinde",
+    "dairyGoat": "Chèvre laitière",
+    "quailEggs": "Caille pondeuse",
+    "quailMeat": "Caille à viande",
+    "trout": "Truite"
   },
   "time": {
     "day": "1 jour",

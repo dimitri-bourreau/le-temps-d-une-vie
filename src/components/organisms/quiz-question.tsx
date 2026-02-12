@@ -19,12 +19,19 @@ interface QuizQuestionProps {
 
 const ANIMAL_KEYS: Record<string, string> = {
   pig: 'pig',
+  'breeding-sow': 'breedingSow',
   'dairy-calf': 'dairyCalf',
   'beef-cow': 'beefCow',
   'male-chick': 'maleChick',
+  'broiler-chicken': 'broilerChicken',
   lamb: 'lamb',
+  rabbit: 'rabbit',
   'egg-hen': 'eggHen',
   turkey: 'turkey',
+  'dairy-goat': 'dairyGoat',
+  'quail-eggs': 'quailEggs',
+  'quail-meat': 'quailMeat',
+  trout: 'trout',
 };
 
 const QuizQuestionInner = ({
@@ -38,12 +45,12 @@ const QuizQuestionInner = ({
   const t = useTranslations('quiz');
   const tAnimals = useTranslations('animals');
 
-  const maxSliderMonths = animal.naturalLifespanYears * 12;
+  const maxSliderYears = animal.naturalLifespanYears;
 
-  const [guessMonths, setGuessMonths] = useState(
-    Math.floor(maxSliderMonths / 2)
-  );
+  const [guessYears, setGuessYears] = useState(Math.floor(maxSliderYears / 2));
   const [isRevealed, setIsRevealed] = useState(false);
+
+  const guessMonths = guessYears * 12;
 
   const handleValidate = () => {
     setIsRevealed(true);
@@ -56,18 +63,6 @@ const QuizQuestionInner = ({
     } else {
       setStep(String(currentStep + 1));
     }
-  };
-
-  const formatSliderValue = (months: number) => {
-    if (months < 12) {
-      return `${months} mois`;
-    }
-    const years = Math.floor(months / 12);
-    const remainingMonths = months % 12;
-    if (remainingMonths === 0) {
-      return `${years} an${years > 1 ? 's' : ''}`;
-    }
-    return `${years}a ${remainingMonths}m`;
   };
 
   const animalKey = ANIMAL_KEYS[animal.id] || animal.id;
@@ -102,12 +97,12 @@ const QuizQuestionInner = ({
           <div className="w-full">
             <VegetalSlider
               min={0}
-              max={maxSliderMonths}
-              value={guessMonths}
-              onChange={setGuessMonths}
+              max={maxSliderYears}
+              value={guessYears}
+              onChange={setGuessYears}
             />
             <div className="mt-2 text-center font-(family-name:--font-inter) text-lg font-medium text-foreground">
-              {formatSliderValue(guessMonths)}
+              {guessYears} {guessYears <= 1 ? 'an' : 'ans'}
             </div>
           </div>
 
